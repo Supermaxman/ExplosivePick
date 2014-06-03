@@ -1,0 +1,12 @@
+name: ExplosivePick
+main: me.supermaxman.explosivepick.ExplosivePick
+version: 1.0.0
+author: Supermaxman
+description: ExplosivePicks!
+commands:
+    ep:
+        description: Explosive pick
+        usage: /<command>
+    explosivepick:
+        description: Explosive pick
+        usage: /<command>
