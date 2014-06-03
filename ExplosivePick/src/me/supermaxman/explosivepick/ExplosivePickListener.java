@@ -22,7 +22,7 @@ public class ExplosivePickListener implements Listener {
 	@EventHandler
 	public void onBlockBreak(BlockBreakEvent e) {
 		Player p = e.getPlayer();
-		if(p.getItemInHand() !=null) {
+		if(p.getItemInHand() !=null && !e.isCancelled()) {
 			ItemStack i = p.getItemInHand();
 			if(i.getType()==Material.DIAMOND_PICKAXE && i.getItemMeta().hasLore()) {
 				if(i.getItemMeta().getLore().contains(ChatColor.YELLOW + "" + ChatColor.BOLD + "Explosive I")) {
